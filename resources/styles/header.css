@@ -1,0 +1,39 @@
+* {
+  -main-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff2600 0.0%, #ff9900 100.0%);
+  -ripple-col: red;
+  -floating-text-col: #ff6600;
+  -button-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff7e14 0.0%, #ff2600 100.0%);
+}
+#search-field {
+  -fx-background-color: black;
+  -fx-background-radius: 0 50 50 0;
+  -fx-border-radius: 0 50 50 0;
+  -fx-border-color: -main-col;
+}
+#search-field .text-field {
+  -fx-highlight-fill: -main-col;
+  -fx-prompt-text-fill: white;
+}
+
+#search-field:floating .floating-text {
+  -fx-background-color: black;
+  -fx-text-fill: -floating-text-col;
+}
+
+#search-field:focus-within {
+  -fx-border-color: -main-col;
+}
+#search-field .floating-text {
+  -fx-text-fill: rgb(168, 160, 160);
+}
+
+#search-button {
+  -button-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff7e14 0.0%, #ff2600 100.0%);
+  -fx-background-color: -button-col;
+  -fx-background-radius: 50 0 0 50 ;
+  -fx-border-radius: 50 0 0 50;
+}
+#search-button .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: -ripple-col; 
+}

@@ -1,0 +1,212 @@
+/*Gradient linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ffcc14 0.0%, #ff6600 100.0%)*/
+* {
+  -ripple-col: red;
+  -floating-text-col: #ff6600;
+  -button-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff7e14 0.0%, #ff2600 100.0%);
+  -header-list-col: #333;
+  -content-list-col: #575757;
+  -drop-col: #444;
+  -drop-text-col: #ccc;
+  -drop-ripple-col: #555;
+  -drop-hover-col: #c95406;
+  -list-text-col: #bbb;
+  -list-hover-col: #494949;
+  -list-selected-col: #454545;
+  -list-icon-selected-col: #f13e12;
+  -list-placeholder-col: -list-icon-selected-col;
+}
+
+
+
+
+#list-view {
+  -fx-background-color: -content-list-col;
+  -fx-border-radius: 0 0 10 10;
+  -fx-background-radius: 0 0 10 10;
+}
+
+#list-view .mfx-legacy-list-cell {
+  -fx-background-color: transparent;
+  -fx-background-radius: 10;
+  -fx-border-radius: 10;
+  -mfx-selected-color: -list-selected-col;
+  -mfx-corner-radius: 10;
+}
+
+#list-view .mfx-legacy-list-cell:hover {
+  -fx-background-color: -list-hover-col;
+}
+
+#list-view .mfx-legacy-list-cell HBox {
+  -fx-background-radius: 10;
+  -fx-border-radius: 10;
+}
+
+
+.placeholder-up {
+  -fx-border-color: -list-placeholder-col;
+  -fx-border-width: 5 0 0 0;
+}
+.placeholder-down {
+  -fx-border-color: -list-placeholder-col;
+  -fx-border-width: 0 0 5 0;
+}
+/* About elements of the list */
+
+.title-song {
+  -fx-font-size: 1.6em;
+  -fx-font-weight: bold;
+  -fx-text-fill: #bbb;
+}
+.artist-name-song {
+  -fx-font-size: 1.2em;
+  -fx-font-style: italic;
+  -fx-text-fill: #999;
+}
+.duration-song {
+  -fx-font-size: 1.4em;
+  -fx-font-weight: 300;
+  -fx-text-fill: #aaa;
+}
+.icon-selected-song {
+  -fx-icon-color: -list-icon-selected-col;
+  -fx-icon-size: 30;
+}
+.details-button {
+  -fx-background-color: transparent;
+  -fx-border-radius: 50;
+  -fx-background-radius: 50;
+}
+
+.details-button FontIcon {
+  -fx-icon-color: #bbb;
+  -fx-icon-size: 25;
+}
+
+.details-button  .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color:  -list-icon-selected-col;
+}
+
+/* Header of the list */
+#header-list {
+  -fx-background-color: -header-list-col;
+  -fx-border-radius: 10 10 0 0;
+  -fx-background-radius: 10 10 0 0;
+}
+#play-button-list {
+  
+  -fx-border-radius: 50;
+  -fx-background-radius: 50;
+  -fx-background-color: -button-col;
+
+}
+#play-button-list .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: -ripple-col;
+}
+
+#personal-orden-button {
+  -fx-background-radius: 50;
+  -fx-border-radius: 50;
+  -fx-text-fill: white;
+  -fx-background-color: -button-col;
+}
+
+#personal-orden-button .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: -ripple-col;  
+}
+
+#order-button {
+  -fx-background-color: -drop-col;
+  -fx-background-radius: 50;
+  -fx-border-radius: 50;
+  -fx-border-color: transparent;
+}
+#order-button .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: -drop-ripple-col;
+}
+
+/*Primer drop */
+#drop1 {
+  -fx-background-color: -drop-col;
+  -fx-border-color: transparent;
+  -fx-border-radius: 50;
+  -fx-background-radius: 50;
+  -fx-text-fill: -drop-text-col;
+  -fx-padding: 0 12 0 12;
+}
+#drop1 .caret {
+  -fx-background-color: transparent;
+}
+#drop1 .caret .mfx-font-icon {
+  -mfx-color: -drop-text-col;
+}
+#drop1 .caret .mfx-ripple-generator{
+  -mfx-ripple-color: -drop-ripple-col;
+}
+#drop1:floating .floating-text {
+  -fx-background-color: transparent;
+  -fx-text-fill: -floating-text-col;
+}
+#drop1:floating .caret .mfx-font-icon {
+  -mfx-color: -floating-text-col;
+}
+#drop1 .combo-popup .virtual-flow {
+  -fx-background-color: -content-list-col;
+  -fx-border-color: transparent;
+  -fx-background-radius: 0 0 10 10;
+  -fx-border-radius: 0 0 10 10;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 20, 0, 0, 0);
+}
+#drop1 .combo-popup .virtual-flow .mfx-combo-box-cell Label{
+  -fx-text-fill: -drop-text-col;
+}
+#drop1 .combo-popup .virtual-flow .mfx-combo-box-cell:hover {
+  -button-col: -drop-hover-col;
+  -fx-background-color: -button-col;
+  -fx-background-radius: 5;
+  -fx-border-radius: 5;
+}
+#drop1 .combo-popup .virtual-flow .mfx-combo-box-cell:selected {
+  -fx-background-color: -drop-col;
+}
+#drop1 .text-field {
+  -fx-padding: 3 0 3 0;
+}
+
+/* Segundo drop */
+#drop2 {
+  -fx-background-color: -drop-col;
+  -fx-border-color: transparent;
+  -fx-background-radius: 50;
+  -fx-border-radius: 50;
+}
+#drop2 > .arrow-button > .arrow {
+  -fx-background-color: -drop-hover-col;
+}
+#drop2 .list-view {
+  -fx-background-color: -content-list-col;
+  -fx-background-radius: 5;
+  -fx-border-radius: 5;
+  -fx-border-insets: 100;
+}
+#drop2 .list-cell {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5;
+  -fx-border-radius: 5;
+}
+#drop2 .list-cell FontIcon {
+  -fx-icon-color: -drop-text-col;
+}
+#drop2 .list-cell:hover {
+  -fx-background-color: -drop-hover-col;
+}
+#drop2 .list-cell:filled:selected:focused, #drop2 .list-cell:filled:selected {
+  -fx-background-color: -drop-col;
+}
+
+
+

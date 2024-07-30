@@ -1,0 +1,73 @@
+* {
+  -ripple-col: red;
+  -button-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff7e14 0.0%, #ff2600 100.0%);
+  -main-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff2600 0.0%, #ff7e14 100.0%);
+}
+
+#removeButton {
+  -fx-background-color: red;
+  -fx-background-radius: 50;
+  -fx-border-radius: 50;
+}
+#removeButton .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: rgba(255, 255, 255, 0.767)
+}
+#removeButton FontIcon {
+  -fx-icon-color: #eee;
+}
+#imageDescription {
+  -fx-background-radius: 20;
+  -fx-border-radius: 20;
+}
+#leftBackground {
+  -fx-background-radius: 10;
+  -fx-border-radius: 10;
+  -fx-background-color: rgba(0,0,0,0.7);
+  -fx-opacity: .3;
+}
+#playlist-button {
+  -fx-background-color: -main-col;
+  -fx-text-fill: #eee;
+}
+#playlist-button .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: -ripple-col;
+}
+#playlist-button FontIcon {
+  -fx-icon-color: #eee;
+}
+#bib-button {
+  -fx-background-color: -main-col;
+  -fx-text-fill: #eee;
+}
+#bib-button .mfx-ripple-generator {
+  -mfx-auto-clip: true;
+  -mfx-ripple-color: -ripple-col;
+}
+#bib-button FontIcon {
+  -fx-icon-color: #eee;
+}
+.left-text {
+  -fx-font-weight: bold;
+}
+#popularidadLabel {
+  -fx-font-size: 1.5em;
+}
+#nombreLabel {
+  -fx-font-size: 1.8em;
+}
+#artistaLabel {
+  -fx-font-weight: normal;
+  -fx-font-style: italic;
+  -fx-font-size: 1.3em;
+}
+#generoLabel {
+  -fx-font-size: 1.2em;
+}
+#yearLabel {
+  -fx-font-size: 1.2em;
+}
+#duracionLabel {
+  -fx-font-size: 1.3em;
+}

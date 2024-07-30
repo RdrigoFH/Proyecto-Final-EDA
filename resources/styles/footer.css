@@ -1,0 +1,47 @@
+* {
+  -main-col: linear-gradient(from 0.0% 52.381% to 100.0% 46.6667%, #ff2600 0.0%, #ff7e14 100.0%);
+  -thumb-head-col: #f13e12;
+  -thumb-head-hover-col: rgba(242, 63, 18, 0.1);
+  -thumb-head-pressed-col: rgba(242, 63, 18, 0.3);
+}
+#prevbt{
+  -fx-background-color: black;
+}
+#playbt{
+  -fx-background-color: black;
+}
+#nextbt{
+  -fx-background-color: black;
+}
+#coverImg{
+  -fx-background-radius: 10px;
+}
+#changeModeBtn {
+  -fx-background-color: black;
+}
+.footer-text {
+  -fx-text-fill: #999;
+  -fx-font-size: 1.2em;
+}
+#sliderTime .bar {
+  -fx-fill: -main-col, 140%
+}
+#sliderTime .thumb-container .thumb {
+  -mfx-color: -thumb-head-col;
+}
+#sliderTime .thumb-container:hover .thumb-radius {
+  -mfx-color: -thumb-head-hover-col;
+}
+#sliderTime .thumb-container:pressed .thumb-radius {
+  -mfx-color: -thumb-head-pressed-col;
+}
+#sliderTime .thumb-container .mfx-ripple-generator {
+  -mfx-ripple-color: -thumb-head-col;
+}
+#sliderTime .tick-even,
+#sliderTime .tick-odd {
+  -mfx-color: -thumb-head-col;
+}
+#sliderTime .axis-minor-tick-mark {
+  -fx-stroke: -thumb-head-hover-col;
+}

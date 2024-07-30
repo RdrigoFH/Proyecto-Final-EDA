@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TNTmusic.controllers.BibliotecaController" prefHeight="200.0" prefWidth="100.0" spacing="4.0" stylesheets="@../styles/list.css" BorderPane.alignment="CENTER">
+   <children>
+      <HBox id="header-list" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="50.0" prefHeight="60.0" prefWidth="200.0" spacing="8.0" VBox.vgrow="NEVER">
+         <children>
+            <MFXTextField id="personal-orden-button" fx:id="numberOfElements" floatMode="BORDER" text="N° entradas" maxWidth="-Infinity"   prefHeight="39.0" prefWidth="5" styleClass="drop"  >
+            </MFXTextField>
+            <MFXComboBox id="drop1" fx:id="ordenes" floatMode="INLINE" floatingText="Seleccionar campo" floatingTextGap="10.0" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="130.0" prefHeight="39.0" prefWidth="130.0" >
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="34.0" HBox.hgrow="ALWAYS" />
+            </MFXComboBox>
+            <MFXButton id="order-button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#changeOrder" prefHeight="30.0" prefWidth="30.0" text="">
+               <graphic>
+                  <FontIcon fx:id="toggleIcon" iconColor="#ff6600" iconLiteral="fa-arrow-down" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="botonOrdenar" id="personal-orden-button" maxWidth="-Infinity" minWidth="-Infinity" onAction="#sortCanciones" prefHeight="26.0" prefWidth="74.0" text="Cargando biblioteca..." />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+      <MFXLegacyListView id="list-view" fx:id="listView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../styles/list.css" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
+
